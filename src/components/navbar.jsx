@@ -4,7 +4,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar">
-        <img className="logo-size" src="/imgs/78b.png" alt="youtube_logo" />
+        <img className="logo-size" src="/imgs/youtube_logo.png" alt="youtube_logo" />
         <form className="search-form">
           <input type="text" className="search-box" />
           <button className="search-btn">

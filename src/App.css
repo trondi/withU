@@ -10,13 +10,18 @@ button {
 
 .navbar {
   display: flex;
-  padding: 1rem 2rem;
+  padding: 0.7rem 2rem;
+}
+
+.logo-size {
+  width: 80px;
+  height: 24px;
 }
 
 .search-form {
   display: flex;
   margin-left: 16rem;
-  border: solid 0.1rem #d3d0d0;
+  border: solid 1px #c6c6c6;
 }
 
 .search-box {
@@ -28,7 +33,7 @@ button {
 .search-btn {
   width: 65px;
   height: 30px;
-  border-left: solid 0.1rem #d3d0d0;
-  background-color: #f1eded;
-  color: rgb(111, 111, 111);
+  border-left: solid 1px #c6c6c6;
+  background-color: #f8f8f8;
+  color: #909090;
 }
