@@ -22,8 +22,8 @@ function App() {
   }, []);
   return (
     <>
-      <VideoList videos={videos} />
       <Navbar />
+      <VideoList videos={videos} />
     </>
   );
 }
