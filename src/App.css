@@ -37,3 +37,8 @@ button {
   background-color: #f8f8f8;
   color: #909090;
 }
+
+.search-btn:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
