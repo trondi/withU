@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  padding: 0.7rem 2rem;
+}
+
+.logo {
+  width: 5.1rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-right: 19rem;
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  border: solid 1px #c6c6c6;
+}
+
+.searchInput {
+  width: 36rem;
+  height: 1.8rem;
+  border: none;
+}
+
+.searchBtn {
+  width: 4rem;
+  height: 1.8rem;
+  border-left: solid 1px #c6c6c6;
+  background-color: #f8f8f8;
+  color: #909090;
+}
+
+.searchBtn:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
