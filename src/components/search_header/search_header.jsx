@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import styles from './navbar.module.css';
+import styles from './search_header.module.css';
 
-const Navbar = ({ onSearch }) => {
+const SearchHeader = ({ onSearch }) => {
   const inputRef = useRef();
 
   const handleSearch = () => {
@@ -12,6 +12,7 @@ const Navbar = ({ onSearch }) => {
   const onClick = () => {
     handleSearch();
   };
+
   const onKeyPress = (event) => {
     if (event.key === 'Enter') {
       handleSearch();
@@ -19,7 +20,7 @@ const Navbar = ({ onSearch }) => {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <header className={styles.header}>
       <img className={styles.logo} src="/imgs/youtube_logo.png" alt="youtube_logo" />
       <div className={styles.searchForm}>
         <input
@@ -33,8 +34,8 @@ const Navbar = ({ onSearch }) => {
           <i className="fas fa-search"></i>
         </button>
       </div>
-    </nav>
+    </header>
   );
 };
 
-export default Navbar;
+export default SearchHeader;

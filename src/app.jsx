@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './app.module.css';
-import Navbar from './components/navbar/navbar';
+import SearchHeader from './components/search_header/search_header';
 import VideoList from './components/video_list/video_list';
 
 function App({ youtube }) {
@@ -19,7 +19,7 @@ function App({ youtube }) {
   }, []);
   return (
     <div className={styles.app}>
-      <Navbar onSearch={search} />
+      <SearchHeader onSearch={search} />
       <VideoList videos={videos} />
     </div>
   );
