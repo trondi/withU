@@ -13,6 +13,7 @@ function App({ youtube }) {
   };
 
   const search = (query) => {
+    setSelectVideo(null);
     youtube
       .search(query) //
       .then((videos) => setVideos(videos));
