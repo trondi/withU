@@ -1,0 +1,9 @@
+.detail {
+  padding: 1.5rem 1rem 1.5rem 6rem;
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+.description {
+  white-space: pre-wrap;
+}

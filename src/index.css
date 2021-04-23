@@ -19,3 +19,13 @@ code {
   flex-direction: column;
   justify-content: center;
 }
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}

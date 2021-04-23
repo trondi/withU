@@ -1,5 +1,11 @@
-button {
-  outline: none;
-  border: 0;
-  cursor: pointer;
+.content {
+  display: flex;
+}
+
+.detail {
+  flex: 1 1 67%;
+}
+
+.list {
+  flex: 1 1 33%;
 }

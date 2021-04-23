@@ -1,13 +1,31 @@
-.content {
+.container {
+  cursor: pointer;
   padding: 0.5rem;
+}
+
+.container.grid {
   width: 25%;
   height: 25%;
 }
 
-.video {
+.container.list {
+  padding-right: 4rem;
+}
+
+.video.grid {
   display: flex;
   flex-direction: column;
-  cursor: pointer;
+}
+
+.video.list {
+  display: flex;
+  flex-direction: row;
+}
+
+.thumbnail.list {
+  width: 168px;
+  height: 94px;
+  margin-right: 0.5rem;
 }
 
 .title,
@@ -15,8 +33,13 @@
   margin: 0.4rem 0;
   font-size: 0.875rem;
 }
+
 .title {
   color: #030303;
+}
+
+.title.list {
+  margin: 0;
 }
 
 .channeltitle {
