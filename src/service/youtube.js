@@ -25,8 +25,8 @@ class Youtube {
       params: {
         part: 'snippet',
         maxResults: 25,
+        type: 'video',
         q: query,
-        type: video,
       },
     });
     return response.data.items.map((item) => ({ ...item, id: item.id.videoId }));
