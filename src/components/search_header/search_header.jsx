@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import styles from './search_header.module.css';
 
-const SearchHeader = ({ onSearch }) => {
+const SearchHeader = memo(({ onSearch }) => {
   const inputRef = useRef();
 
   const handleSearch = () => {
@@ -18,7 +18,7 @@ const SearchHeader = ({ onSearch }) => {
       handleSearch();
     }
   };
-
+  console.log('header!!!');
   return (
     <header className={styles.header}>
       <img className={styles.logo} src="/imgs/youtube_logo.png" alt="youtube_logo" />
@@ -36,6 +36,6 @@ const SearchHeader = ({ onSearch }) => {
       </div>
     </header>
   );
-};
+});
 
 export default SearchHeader;
