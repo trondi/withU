@@ -4,12 +4,21 @@
 }
 
 .container.grid {
-  width: 25%;
+  width: 23.5rem;
   height: 25%;
 }
 
+.container.grid:nth-child(-n + 4) {
+  margin-top: 0.5rem;
+}
+
 .container.list {
+  width: 100%;
   padding-right: 4rem;
+}
+
+.container.list:first-child {
+  margin-top: 0.5rem;
 }
 
 .video.grid {
