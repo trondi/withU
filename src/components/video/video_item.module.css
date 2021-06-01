@@ -54,3 +54,7 @@
 .channeltitle {
   color: #606060;
 }
+
+.thumbnail {
+  border-radius: 0.4rem;
+}

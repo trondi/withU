@@ -18,11 +18,11 @@ const SearchHeader = memo(({ onSearch }) => {
       handleSearch();
     }
   };
-  console.log('header!!!');
+
   return (
     <header className={styles.header}>
-      <img className={styles.logo} src="/imgs/youtube_logo.png" alt="youtube_logo" />
       <div className={styles.searchForm}>
+        <img className={styles.searchImg} src="/imgs/search.png" alt="search" />
         <input
           ref={inputRef}
           className={styles.searchInput}
@@ -33,6 +33,13 @@ const SearchHeader = memo(({ onSearch }) => {
         <button className={styles.searchBtn} type="submit" onClick={onClick}>
           <i className="fas fa-search"></i>
         </button>
+      </div>
+      <div className={styles.tagBox}>
+        <button className={styles.btn}>추천 영상</button>
+        <button className={styles.btn}>Vinyasa</button>
+        <button className={styles.btn}>Zumba</button>
+        <button className={styles.btn}>Stretching</button>
+        <button className={styles.btn}>K-pop</button>
       </div>
     </header>
   );
