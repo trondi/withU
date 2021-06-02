@@ -29,3 +29,7 @@ button {
   border: 0;
   cursor: pointer;
 }
+
+input:focus {
+  outline: none;
+}

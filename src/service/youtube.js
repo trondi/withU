@@ -3,12 +3,24 @@ class Youtube {
     this.youtube = httpClient;
   }
 
+  async searchTraining() {
+    const response = await this.youtube.get('search', {
+      params: {
+        part: 'snippet',
+        maxResults: 24,
+        type: 'video',
+        q: '홈트레이닝',
+      },
+    });
+    return response.data.items.map((item) => ({ ...item, id: item.id.videoId }));
+  }
+
   async mostPopular() {
     const response = await this.youtube.get('videos', {
       params: {
         part: 'snippet',
         chart: 'mostPopular',
-        maxResults: 25,
+        maxResults: 24,
       },
     });
     return response.data.items;
@@ -24,7 +36,7 @@ class Youtube {
     const response = await this.youtube.get('search', {
       params: {
         part: 'snippet',
-        maxResults: 25,
+        maxResults: 24,
         type: 'video',
         q: query,
       },
